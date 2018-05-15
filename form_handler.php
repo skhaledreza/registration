@@ -22,9 +22,8 @@ if ($conn->connect_error) {
 //echo "Connected successfully";
 
 echo "<br/>";
-	
 
-$sql = "INSERT INTO info (firstName, lastName, ageYear, sex, passWord) VALUES ('$name1', '$name2', '$age', '$selectOption', '$password')";
+$sql = "INSERT INTO info (firstName, lastName, ageYear, sex, passWord) VALUES ('$name1', '$name2', '$age', '$selectOption','$password')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
